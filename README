@@ -1,0 +1,13 @@
+# Unbirhday for iPad Playgrounds
+
+## What it does
+
+Unbirthday is an iPad playground. You’ll need an iPad with the Swift Playgrounds app installed.
+
+Unbirthday finds milestones and palindromes in days of your birthday.
+
+Milestones are round numbers like “50,000 days old”. Palindromes are reflected numbers like “32123 days old”.
+
+## How to get it
+
+Use a Mac and airdrop the Playground over. Or use a git client on iPad. I like Working Copy.

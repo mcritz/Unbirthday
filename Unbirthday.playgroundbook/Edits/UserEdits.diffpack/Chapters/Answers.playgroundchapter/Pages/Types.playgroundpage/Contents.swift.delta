@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>en</string>
+			<key>ModifiedRange</key>
+			<string>{174, 2}</string>
+			<key>OriginalContent</key>
+			<string>at</string>
+			<key>OriginalRange</key>
+			<string>{174, 2}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string></string>
+			<key>ModifiedRange</key>
+			<string>{188, 0}</string>
+			<key>OriginalContent</key>
+			<string>thda</string>
+			<key>OriginalRange</key>
+			<string>{188, 4}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>hday</string>
+			<key>ModifiedRange</key>
+			<string>{189, 4}</string>
+			<key>OriginalContent</key>
+			<string>e</string>
+			<key>OriginalRange</key>
+			<string>{193, 1}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let now = Date()
+
+func days(from seconds: Double) -&gt; Int {
+    return Int(ceil(seconds / (60 * 60 * 24)))
+}
+enum Daze: Error {
+    case timeTraveller(String)
+}
+guard birthdate &lt; now else {
+    throw Daze.timeTraveller("Cannot be born in the future.")
+}
+let alive = DateInterval(start: birthdate, end: now)
+let daysAlive = days(from: alive.duration)
+ 
+show("You are \(daysAlive) days alive")
+
+func interestingNumber(near number: Int) -&gt; Int {
+    let milestoneDays =  rounded(near: number)
+    var palandromeNumber = palandrome(of: number)
+    if palandromeNumber &lt; number {
+        return milestoneDays
+    }
+    return milestoneDays &lt; palandromeNumber ? milestoneDays : palandromeNumber
+}
+
+func palandrome(of number: Int) -&gt; Int {
+    let numberString = String(number)
+    let length = numberString.count
+    let midwayPoint = Double(length)/2
+    var midPointIndex = Int(midwayPoint.rounded(.up))
+    var funString = numberString.prefix(midPointIndex)
+    let postFix = numberString.prefix(midPointIndex - (number % 2)).reversed()
+    funString.append(contentsOf: postFix)
+    return Int(funString)!
+}
+
+func rounded(near number: Int) -&gt; Int {
+    let milestoneDays = 100
+    
+    let goalMultiplier = round(Double(number/milestoneDays)) + 1
+    return Int(goalMultiplier) * milestoneDays
+}
+
+let milestone = interestingNumber(near: daysAlive)
+
+show("You are \(milestone - daysAlive) days from being \(milestone) days alive.")
+</string>
+			<key>ModifiedRange</key>
+			<string>{238, 1427}</string>
+			<key>OriginalContent</key>
+			<string>// 2. Ask for a number
+show("What is your favorite number?")
+let number = askForNumber("Number")
+
+// 3. Ask for a choice from a set of options
+show("What is your favorite color?")
+let color = askForChoice("Color", options: ["Blue", "Green", "Orange", "Purple", "Red", "Yellow"])
+</string>
+			<key>OriginalRange</key>
+			<string>{239, 279}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Types.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
